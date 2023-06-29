@@ -1,0 +1,24 @@
+{
+  "name": "cerulean-lion-recipe-app",
+  "version": "1.0.0",
+  "description": "search recipes",
+  "main": "index.js",
+  "scripts": {
+    "test": "n/a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hack-Weekly/cerulean-lion-recipe-app.git"
+  },
+  "keywords": [
+    "food",
+    "recipes",
+    "recipe"
+  ],
+  "author": "cerulean-lions",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hack-Weekly/cerulean-lion-recipe-app/issues"
+  },
+  "homepage": "https://github.com/Hack-Weekly/cerulean-lion-recipe-app#readme"
+}
