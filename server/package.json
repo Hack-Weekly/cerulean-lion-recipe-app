@@ -4,6 +4,7 @@
   "description": "back end for hungry-lion",
   "main": "y",
   "scripts": {
+    "start": "node index.js",
     "test": "n/a"
   },
   "repository": {
