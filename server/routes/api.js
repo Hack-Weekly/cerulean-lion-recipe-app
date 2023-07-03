@@ -26,8 +26,19 @@ router.get("/recipes", (req, res) => {
             res.status(200).json(posts);
         })
         .catch((error) => {
-            console.error("Error encounterred requesting recipe list");
+            console.error("Error encountered requesting recipe list");
         })
 });
+
+router.post("/searchRecipes", (req, res) => {
+    const {dishName} = req.body
+    Recipe.find({dishName: dishName})
+        .then((posts) => {
+            res.status(200).json(posts);
+        })
+        .catch((error) => {
+            console.error("Error encountered searching recipe list");
+        })
+})
 
 module.exports = router;
