@@ -8,12 +8,6 @@ router.post("/recipes", (req, res) => {
     const ingredients = req.query.ingredients; 
     const instructions = req.query.instructions;
 
-    console.log(dishName); 
-    console.log(ingredients);
-    console.log(instructions);
-    //get parameters from request 
-    //const {dishName, ingredients, instructions} = req.body;
-
     Recipe.create({dishName, ingredients, instructions})
         .then((result) => {
             res.status(201).send("Recipe created successfully");
