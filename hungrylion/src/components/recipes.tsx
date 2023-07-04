@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'preact/hooks';
-import RecipeDetails from "./recipeDetails"
+import RecipeDetails from "./RecipeDetails"
 
 const recipes = () => {
   const [Recipe,setRecipe] = useState([])
