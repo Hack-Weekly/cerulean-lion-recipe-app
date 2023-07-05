@@ -2,6 +2,7 @@ const footer = () => {
   return (
     <div className="container flex justify-evenly min-w-full bg-gray-300 my-60 static">
       <div className="box1 p-4">
+        {/* bold this */}
         <p>Copyright © 2023 w/ ❤️ by the Cerulean Lions</p>
       </div>
       {/* <div className="box2 p-3">
