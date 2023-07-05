@@ -1,28 +1,22 @@
 {
-  "name": "hungrylion",
-  "version": "1.0.0",
-  "description": "search recipes",
-  "main": "y",
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "n/a"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Hack-Weekly/cerulean-lion-recipe-app.git"
-  },
-  "keywords": [
-    "recipes",
-    "food",
-    "recipe"
-  ],
-  "author": "cerulean-lions",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Hack-Weekly/cerulean-lion-recipe-app/issues"
-  },
-  "homepage": "https://github.com/Hack-Weekly/cerulean-lion-recipe-app#readme",
   "dependencies": {
-    "preact": "^10.15.1",
-    "tailwindcss": "^3.3.2"
+    "preact": "^10.13.2"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
   }
 }
