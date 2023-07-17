@@ -6,7 +6,7 @@ Searchable Recipes App.
 
 ### **Design**: Eddie P (1Dedios) & lacho
 
-### **FE** - shohei, teddy, lacho, me, curkingous
+### **FE** - shohei, teddy, Lazaro Beas (lacho), me, curkingous
 
 ### **BE** - me, randomdude76, shotdown
 
