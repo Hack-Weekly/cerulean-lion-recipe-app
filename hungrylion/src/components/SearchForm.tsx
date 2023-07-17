@@ -61,7 +61,7 @@ export function SearchForm(setFoodData: any) {
           id="recipeSearch"
           className="bg-gray-50 border-2 border-gray-400 text-gray-900 text-sm rounded-full block w-full pl-10 p-2.5 focus:border-cerulean outline-none transition-all"
           placeholder="Search our Delicious Recipes..."
-          required
+          required="true"
           value={search}
           onChange={(e) => {
             const target = e.target as HTMLTextAreaElement;
