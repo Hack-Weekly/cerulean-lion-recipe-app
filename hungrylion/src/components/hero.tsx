@@ -1,5 +1,5 @@
 import Chef from "../assets/Chef.svg";
-import { SearchForm } from "./search.tsx";
+import { SearchForm } from "./SearchForm.tsx";
 import { useState } from "preact/hooks";
 
 interface RecipeDetailsProps {
@@ -38,4 +38,4 @@ export default function Hero() {
       </div>
     </div>
   );
-} /* Hungry? We got you. */
+}
