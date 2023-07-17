@@ -2,10 +2,6 @@ import { useState } from "preact/hooks";
 require("dotenv").config();
 console.log(process.env);
 
-const HEADERS = {
-  "X-Api-Key": "8yKT4nO5pY1XDqlR/cskvQ==H7FrMei3gbIeL5JO",
-};
-
 interface RecipeDetailsProps {
   recipe: {
     title: string;
@@ -20,10 +16,23 @@ export function SearchForm(setFoodData: any) {
   const [pending, setPending] = useState(false);
   const apiKey = process.env.RECIPE_APP;
 
-  const recipeSearch = () => {
-    const query = document.getElementById("recipeSearch").value;
-    const url = "https://api.api-ninjas.com/v1/recipe?query=";
+  const recipeSearch = async () => {
+    const query = search; // or document.getElementById("recipeSearch").value
+    const apiUrl = "https://api.api-ninjas.com/v1/recipe?query=";
     const key = apiKey;
+    const url = apiUrl + query;
+
+    const headers = {
+      "X-Api-Key": `${key}`,
+    };
+
+    const response = await fetch(url, {
+      credentials: headers,
+    });
+
+    const data = await response.json();
+
+    console.log(data);
   };
 
   return (
