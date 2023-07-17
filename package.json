@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Hack-Weekly/cerulean-lion-recipe-app#readme",
   "dependencies": {
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "dotenv-vault": "^1.25.0"
   }
 }
