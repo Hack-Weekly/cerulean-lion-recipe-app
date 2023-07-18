@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/Hack-Weekly/cerulean-lion-recipe-app/issues"
   },
-  "homepage": "https://github.com/Hack-Weekly/cerulean-lion-recipe-app#readme"
+  "homepage": "https://github.com/Hack-Weekly/cerulean-lion-recipe-app#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "dotenv-vault": "^1.25.0"
+  }
 }
