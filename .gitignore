@@ -88,6 +88,7 @@ Thumbs.db
 .env.test.local
 .env.production.local
 .env.local
+.env.*.local
 .env.me
 
 # parcel-bundler cache (https://parceljs.org/)

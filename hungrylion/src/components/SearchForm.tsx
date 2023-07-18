@@ -1,6 +1,6 @@
 import { useState } from "preact/hooks";
-require("dotenv").config();
-console.log(process.env);
+//require("dotenv").config();
+import.meta.env;
 
 interface RecipeDetailsProps {
   recipe: {
@@ -14,7 +14,7 @@ interface RecipeDetailsProps {
 export function SearchForm(setFoodData: any) {
   const [search, setSearch] = useState("");
   const [pending, setPending] = useState(false);
-  const apiKey = process.env.RECIPE_APP;
+  const apiKey = import.meta.env.RECIPE_APP;
 
   const recipeSearch = async () => {
     const query = search; // or document.getElementById("recipeSearch").value
@@ -36,7 +36,7 @@ export function SearchForm(setFoodData: any) {
   };
 
   return (
-    <form className="flex items-center flex-col gap-2.5">
+    <form className="flex items-center flex-col gap-2.5" method="GET">
       <label for="simple-search" className="sr-only">
         Search our index...
       </label>
@@ -61,7 +61,7 @@ export function SearchForm(setFoodData: any) {
           id="recipeSearch"
           className="bg-gray-50 border-2 border-gray-400 text-gray-900 text-sm rounded-full block w-full pl-10 p-2.5 focus:border-cerulean outline-none transition-all"
           placeholder="Search our Delicious Recipes..."
-          required="true"
+          required
           value={search}
           onChange={(e) => {
             const target = e.target as HTMLTextAreaElement;
